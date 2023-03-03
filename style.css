@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 1em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.email {
+  border-radius: 1em;
+  border: 2px solid rebeccapurple;
+  color: rgb(35, 94, 35);
+  padding: 0.75em 1em;
+  font-size: 1em;
+  min-width: 250px;
+}
+
+.email--with-icon {
+  padding-left: 3em;
+}
+
+.email::placeholder {
+  color: blueviolet;
+}
+
+.email:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 1em blueviolet;
+}
+
+.input-group {
+  position: relative;
+}
+
+.email-icon {
+  position: absolute;
+  background-image: url(envelope-regular.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 1.5em;
+  left: 1em;
+}
